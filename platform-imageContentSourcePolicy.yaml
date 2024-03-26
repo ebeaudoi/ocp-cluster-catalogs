@@ -1,0 +1,35 @@
+---
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: generic-0
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/platform-v414/rhel8
+    source: registry.redhat.io/rhel8
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/platform-v414/ubi8
+    source: registry.redhat.io/ubi8
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/platform-v414/devspaces
+    source: quay.io/devspaces
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/platform-v414/ubi8
+    source: registry.access.redhat.com/ubi8
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/platform-v414/openshift-release-dev
+    source: quay.io/openshift-release-dev
+---
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: release-0
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/platform-v414/openshift/release
+    source: quay.io/openshift-release-dev/ocp-v4.0-art-dev
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/platform-v414/openshift/release-images
+    source: quay.io/openshift-release-dev/ocp-release

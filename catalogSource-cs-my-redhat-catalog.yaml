@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: cs-my-redhat-catalog
+  namespace: openshift-marketplace
+spec:
+  image: ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/my-redhat-catalog:v4.14
+  sourceType: grpc
