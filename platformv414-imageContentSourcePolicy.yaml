@@ -2,7 +2,7 @@
 apiVersion: operator.openshift.io/v1alpha1
 kind: ImageContentSourcePolicy
 metadata:
-  name: generic-0
+  name: generic-platformv414
 spec:
   repositoryDigestMirrors:
   - mirrors:
@@ -24,7 +24,7 @@ spec:
 apiVersion: operator.openshift.io/v1alpha1
 kind: ImageContentSourcePolicy
 metadata:
-  name: release-0
+  name: release-platformv414
 spec:
   repositoryDigestMirrors:
   - mirrors:

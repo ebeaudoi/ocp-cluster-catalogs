@@ -2,7 +2,7 @@
 apiVersion: operator.openshift.io/v1alpha1
 kind: ImageContentSourcePolicy
 metadata:
-  name: generic-0
+  name: generic-redhatv414
 spec:
   repositoryDigestMirrors:
   - mirrors:
@@ -20,7 +20,7 @@ kind: ImageContentSourcePolicy
 metadata:
   labels:
     operators.openshift.org/catalog: "true"
-  name: operator-0
+  name: operator-redhatv414
 spec:
   repositoryDigestMirrors:
   - mirrors:
