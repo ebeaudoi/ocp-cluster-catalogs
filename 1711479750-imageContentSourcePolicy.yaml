@@ -1,0 +1,18 @@
+---
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  labels:
+    operators.openshift.org/catalog: "true"
+  name: operator-0
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/nvidia
+    source: nvcr.io/nvidia
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/nvidia
+    source: registry.connect.redhat.com/nvidia
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/elastic
+    source: registry.connect.redhat.com/elastic
