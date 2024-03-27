@@ -8,11 +8,11 @@ metadata:
 spec:
   repositoryDigestMirrors:
   - mirrors:
-    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/nvidia
-    source: nvcr.io/nvidia
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/nutanix
+    source: registry.connect.redhat.com/nutanix
   - mirrors:
-    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/nvidia
-    source: registry.connect.redhat.com/nvidia
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/sig-storage
+    source: registry.k8s.io/sig-storage
   - mirrors:
-    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/elastic
-    source: registry.connect.redhat.com/elastic
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/mod-certifiedv414/openshift4
+    source: registry.redhat.io/openshift4
