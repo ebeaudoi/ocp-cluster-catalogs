@@ -1,0 +1,84 @@
+---
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  labels:
+    operators.openshift.org/catalog: "true"
+  name: operator-0
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/jboss-webserver-5
+    source: registry.redhat.io/jboss-webserver-5
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/openshift-logging
+    source: registry.redhat.io/openshift-logging
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/rhbk
+    source: registry.redhat.io/rhbk
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/openshift-pipelines
+    source: registry.redhat.io/openshift-pipelines
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/advanced-cluster-security
+    source: registry.redhat.io/advanced-cluster-security
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/rhel9
+    source: registry.redhat.io/rhel9
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/ubi8
+    source: registry.redhat.io/ubi8
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/rhosdt
+    source: registry.redhat.io/rhosdt
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/openshift4
+    source: registry.redhat.io/openshift4
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/ansible-automation-platform-24
+    source: registry.redhat.io/ansible-automation-platform-24
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/openshift-service-mesh
+    source: registry.redhat.io/openshift-service-mesh
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/openshift-serverless-1
+    source: registry.redhat.io/openshift-serverless-1
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/openshift-gitops-1
+    source: registry.redhat.io/openshift-gitops-1
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/rhel8
+    source: registry.redhat.io/rhel8
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/multicluster-engine
+    source: registry.redhat.io/multicluster-engine
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/odf4
+    source: registry.redhat.io/odf4
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/openshift-serverless-1-tech-preview
+    source: registry.redhat.io/openshift-serverless-1-tech-preview
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/ansible-automation-platform
+    source: registry.redhat.io/ansible-automation-platform
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/rhceph
+    source: registry.redhat.io/rhceph
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/datagrid
+    source: registry.redhat.io/datagrid
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/rhacm2
+    source: registry.redhat.io/rhacm2
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/devspaces
+    source: registry.redhat.io/devspaces
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/rhoai
+    source: registry.redhat.io/rhoai
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/devworkspace
+    source: registry.redhat.io/devworkspace
+  - mirrors:
+    - ebdnquay.ebdnlab.vmware.tamlab.rdu2.redhat.com:8443/redhat-v414/gatekeeper
+    source: registry.redhat.io/gatekeeper

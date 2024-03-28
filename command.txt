@@ -1,0 +1,1 @@
+python3 merge-icsps.py icsp1.yaml icsp2.yaml
